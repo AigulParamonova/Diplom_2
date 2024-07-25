@@ -84,7 +84,7 @@ public class CreateOrderTest {
         Ingredients ingredients = orderSteps.getIngredient();
         ingredient.add(ingredients.getData().get(1).get_id() + "khilunjlknjkbyg9876");
         ingredient.add(ingredients.getData().get(2).get_id() + "op9iuojuigtyfjkuhh");
-        Response response = orderSteps.createOrderWithAuth(order, token);
+        Response response = OrderSteps.createOrderWithAuth(order, token);
         response.then().log().all()
                 .statusCode(500);
     }
